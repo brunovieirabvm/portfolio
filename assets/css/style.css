@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --collor-primary: #3D8D7A;
+    --color-primary: #3D8D7A;
     --color-secondary: #FBFFE4;
     --color-tertiary: #B3D8A8;
     --color-hover: #A3D1C6;
@@ -17,6 +17,41 @@
 }
 
 body {
-    background-color: var(--collor-primary);
+    background-color: var(--color-primary);
     color: var(--color-secondary);
+    padding-top: 80px;
+}
+
+.main-header {
+    background-color: var(--color-tertiary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    z-index: 1000;
+    border-bottom: 2px solid var(--color-secondary);
+}
+
+.main-header_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family-secondary);
+    font-size: 24px;
+    font-weight: 600;
+    gap: 30px;
+}
+
+.main-header_menu_link {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+}
+
+.main-header_menu_link:hover {
+    background-color: var(--color-hover);
+    color: var(--color-primary);
 }
