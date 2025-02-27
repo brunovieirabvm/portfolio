@@ -111,8 +111,8 @@ body {
     display: flex;
     justify-content: center;
     gap: 10px;
-    font-family: var(--font-family-primary);
-    font-size: 24px;
+    font-family: var(--font-family-secondary);
+    font-size: 26px;
     font-weight: 600;
     border: 3px solid var(--color-tertiary);
     background-color: var(--color-primary);
@@ -127,10 +127,11 @@ body {
 .presentation_btn:hover {
     background-color: var(--color-hover);
     color: var(--color-primary);
-
+    
 }
 
 .main-content_img {
-    width: 50%;
+    width: 650px;
     height: auto;
+    border-radius: 10px;
 }
