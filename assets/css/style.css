@@ -6,8 +6,8 @@
     --color-tertiary: #B3D8A8;
     --color-hover: #A3D1C6;
 
-    --font-family-primary: 'Krona One', sans-serif;
-    --font-family-secondary: 'Montserrat', sans-serif;
+    --font-family-primary: "Krona One", sans-serif;
+    --font-family-secondary: "Montserrat", sans-serif;
 }
 
 
@@ -17,11 +17,14 @@
 }
 
 body {
+    box-sizing: border-box;
     background-color: var(--color-primary);
     color: var(--color-secondary);
     padding-top: 80px;
 }
 
+
+/* Menu */
 .main-header {
     background-color: var(--color-tertiary);
     position: fixed;
@@ -30,7 +33,7 @@ body {
     width: 100%;
     padding: 15px 20px;
     z-index: 1000;
-    border-bottom: 2px solid var(--color-secondary);
+    border-bottom: 3px solid var(--color-secondary);
 }
 
 .main-header_menu {
@@ -54,4 +57,80 @@ body {
 .main-header_menu_link:hover {
     background-color: var(--color-hover);
     color: var(--color-primary);
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 10%;
+}
+
+.main-content_section {
+    display: flex;
+    flex-direction: column;
+    width: 615px;
+    gap: 40px;
+}
+
+.main-content_section_title {
+    font-family: var(--font-family-primary);
+    font-size: 32px;
+    color: var(--color-secondary);
+    text-align: center;
+}
+
+.main-content_section_title_strong {
+    color: var(--color-tertiary);
+}
+
+.main-content_section_paragraph {
+    font-family: var(--font-family-secondary);
+    font-size: 25px;
+    color: var(--color-secondary);
+    text-align: justify;
+}
+
+.presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.presentation_subtitle {
+    font-family: var(--font-family-secondary);
+    font-size: 28px;
+    text-align: center;
+    color: var(--color-secondary);
+}
+
+.presentation_btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-family: var(--font-family-primary);
+    font-size: 24px;
+    font-weight: 600;
+    border: 3px solid var(--color-tertiary);
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    width: 378px;
+    padding: 21px;
+}
+
+.presentation_btn:hover {
+    background-color: var(--color-hover);
+    color: var(--color-primary);
+
+}
+
+.main-content_img {
+    width: 50%;
+    height: auto;
 }
