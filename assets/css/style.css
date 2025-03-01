@@ -2,8 +2,8 @@
 
 :root {
     --color-primary: #3D8D7A;
-    --color-secondary: #FBFFE4;
-    --color-tertiary: #B3D8A8;
+    --color-secondary: #B3D8A8;
+    --color-tertiary: #FBFFE4;
     --color-hover: #A3D1C6;
 
     --font-family-primary: "Krona One", sans-serif;
@@ -23,21 +23,21 @@ html {
 body {
     box-sizing: border-box;
     background-color: var(--color-primary);
-    color: var(--color-secondary);
+    color: var(--color-tertiary);
     padding-top: 80px;
 }
 
 
 /* Menu */
 .main-header {
-    background-color: var(--color-tertiary);
+    background-color: var(--color-secondary);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 15px 20px;
     z-index: 1000;
-    border-bottom: 3px solid var(--color-secondary);
+    border-bottom: 3px solid var(--color-tertiary);
 }
 
 .main-header_menu {
@@ -52,7 +52,7 @@ body {
 
 .main-header_menu_link {
     background-color: var(--color-primary);
-    color: var(--color-secondary);
+    color: var(--color-tertiary);
     text-decoration: none;
     border-radius: 6px;
     padding: 8px 12px;
@@ -94,18 +94,18 @@ body {
 .main-content_section_title {
     font-family: var(--font-family-primary);
     font-size: 2rem;
-    color: var(--color-secondary);
+    color: var(--color-tertiary);
     text-align: center;
 }
 
 .main-content_section_title_strong {
-    color: var(--color-tertiary);
+    color: var(--color-secondary);
 }
 
 .main-content_section_paragraph {
     font-family: var(--font-family-secondary);
     font-size: 1.5rem;
-    color: var(--color-secondary);
+    color: var(--color-tertiary);
     text-align: justify;
 }
 
@@ -121,7 +121,7 @@ body {
     font-family: var(--font-family-secondary);
     font-size: 1.75rem;
     text-align: center;
-    color: var(--color-secondary);
+    color: var(--color-tertiary);
 }
 
 .presentation_btn {
@@ -131,9 +131,9 @@ body {
     font-family: var(--font-family-secondary);
     font-size: 1.75rem;
     font-weight: 600;
-    border: 3px solid var(--color-tertiary);
+    border: 3px solid var(--color-secondary);
     background-color: var(--color-primary);
-    color: var(--color-secondary);
+    color: var(--color-tertiary);
     text-decoration: none;
     text-align: center;
     border-radius: 10px;
@@ -144,7 +144,56 @@ body {
 .presentation_btn:hover {
     background-color: var(--color-hover);
     color: var(--color-primary);
+}
 
+/* Curriculum */
+.main-curriculum {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 8%;
+    gap: 35px;
+}
+
+.main-curriculum_section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-curriculum_section_header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.main-curriculum_section_header_title {
+    font-family: var(--font-family-secondary);
+    font-size: 2rem;
+    color: var(--color-secondary);
+    padding-bottom: 1%;
+}
+
+.main-curriculum_section_header_p {
+    font-family: var(--font-family-secondary);
+    font-size: 1.5rem;
+    color: var(--color-tertiary);
+}
+
+.main-curriculum_section_subtitle {
+    font-family: var(--font-family-secondary);
+    font-size: 1.5rem;
+    color: var(--color-secondary);
+}
+
+.main-curriculum_section_paragraph {
+    font-family: var(--font-family-secondary);
+    font-size: 1.25rem;
+    color: var(--color-tertiary);
+    text-align: justify;
+}
+
+.main-curriculum_section_paragraph_strong {
+    padding-right: 15px;
 }
 
 /* Footer */
@@ -153,10 +202,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--color-tertiary);
+    background-color: var(--color-secondary);
     padding: 20px 0;
-    color: var(--color-secondary);
-    border-top: 3px solid var(--color-secondary);
+    border-top: 3px solid var(--color-tertiary);
     gap: 20px;
 }
 
@@ -181,7 +229,7 @@ body {
     font-family: var(--font-family-secondary);
     font-size: 1.25rem;
     font-weight: 600;
-    color: var(--color-secondary);
+    color: var(--color-tertiary);
 }
 
 .main-footer_section_contact_link {
@@ -196,13 +244,13 @@ body {
 }
 
 .main-footer_section_contact_link>a:hover {
-    color: var(--color-secondary);
+    color: var(--color-tertiary);
 }
 
 .main-footer_lgpd {
     font-family: var(--font-family-secondary);
     font-size: 1.25rem;
     font-weight: 500;
-    color: var(--color-secondary);
+    color: var(--color-tertiary);
     padding-bottom: 1%;
 }
